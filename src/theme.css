@@ -1,0 +1,117 @@
+/* tema claro */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+/* tema escuro */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* botão escuro/claro */
+.light-mode button {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode button {
+  background-color: #f5f5f5ff;
+  color: #000;
+}
+
+/* caixas de post e outros elementos */
+.post-card {
+  background-color: inherit;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.dark-mode .post-card {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+.navbar {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #e5e5e5;
+}
+
+/* Quando ativo */
+.nav-link.active {
+  background-color: #203f84ff; /* azul */
+  color: green;
+  /* color: white; */
+}
+
+/* -------------- */
+
+/* Quando ativo no tema claro */
+.nav-link.active {
+  background-color: #203f84ff; /* azul escuro */
+  color: green; /* texto verde */
+}
+
+/* Quando ativo no tema escuro */
+.dark-mode .nav-link.active {
+  background-color: #3b82f6; /* azul claro */
+  color: #32cd32; /* verde vivo (lime green) */
+}
+
+/* Hover no modo escuro */
+.dark-mode .nav-link:hover {
+  background-color: #4f8efc; /* azul um pouco mais claro */
+}
+
+/* Quando ativo no tema claro */
+.nav-link.active {
+  background-color: #203f84ff; /* azul escuro */
+  color: green; /* texto verde */
+}
+
+/* Quando inativo no tema claro */
+.nav-link {
+  color: inherit; /* mantém a cor padrão */
+}
+
+/* Quando ativo no tema escuro */
+.dark-mode .nav-link.active {
+  background-color: #3b82f6; /* azul claro */
+  color: #32cd32; /* verde vivo */
+}
+
+/* Quando inativo no tema escuro */
+.dark-mode .nav-link {
+  color: #1e293b; /* fonte escura no dark mode (azul bem escuro ou quase preta) */
+}
+
+/* Hover no modo escuro */
+.dark-mode .nav-link:hover {
+  background-color: #4f8efc; /* azul mais claro no hover */
+}
