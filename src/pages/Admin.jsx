@@ -150,7 +150,7 @@ export default function Admin() {
         await api.put(`/blogposts/${id}`, payload)
         setMsg('Alterações salvas!')
       } else {
-        await api.post('/blogpost', payload)
+        await api.post('/blogposts', payload)
         setMsg('Publicado com sucesso!')
         resetForm()
       }
